@@ -1,0 +1,206 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 198px;
+}
+#wrap #header #title {
+  margin-top: 2px;
+  width: 100%;
+}
+#wrap #header #title .message-box {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  padding: 11px 0;
+  font-size: 16px;
+}
+#wrap #header #title .title-container {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 22px 0 22px 0;
+}
+#wrap #header #title .title-container i {
+  line-height: 42px;
+  font-size: 18px;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+}
+#wrap #main #section1 .slide-container {
+  position: relative;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main #section1 .slide-container .slide-view {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap {
+  width: 1700%;
+  display: flex;
+  margin-left: -100%;
+  position: relative;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide img {
+  width: 100%;
+  pointer-events: none;
+}
+#wrap #main #section1 .slide-container .page-btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 2;
+}
+#wrap #main #section1 .slide-container .page-btn-box a {
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+  background: #787878;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-indent: -2000px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#wrap #main #section1 .slide-container .page-btn-box a.on {
+  background: #111;
+  border: 2px solid #fff;
+  transform: scale(1.5);
+}
+#wrap #main #section1 .slide-container .next-btn {
+  position: absolute;
+  top: 50%;
+  right: 16%;
+  z-index: 2;
+  margin-top: -26px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#wrap #main #section1 .slide-container .next-btn img {
+  width: 52px;
+  height: 52px;
+}
+#wrap #main #section1 .slide-container .prev-btn {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 16%;
+  margin-top: -26px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#wrap #main #section1 .slide-container .prev-btn img {
+  transform: rotate(180deg);
+  width: 52px;
+  height: 52px;
+}
+#wrap #main #section1 .slide-container:hover .next-btn {
+  opacity: 1;
+}
+#wrap #main #section1 .slide-container:hover .prev-btn {
+  opacity: 1;
+}
+#wrap #main #section2 {
+  width: 100%;
+}
+#wrap #main #section2 .slide-container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  z-index: 1;
+  width: 1050px;
+  height: 530.562px;
+  margin: 0 746.5px;
+  padding: 40px 0;
+}
+#wrap #main #section2 .slide-container .slide-view {
+  position: relative;
+  width: 100%;
+  height: 530.562px;
+  overflow: hidden;
+}
+#wrap #main #section2 .slide-container .slide-view .title {
+  width: 100%;
+  height: 48.188px;
+  margin-bottom: 27px;
+  display: flex;
+  justify-content: center;
+}
+#wrap #main #section2 .slide-container .slide-view .title p {
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section2 .slide-container .slide-view .title p span {
+  width: 100%;
+  font-size: 28px;
+}
+#wrap #main #section2 .slide-container .slide-view .slide-wrap {
+  width: 4980px;
+  height: 455.375px;
+  display: flex;
+  position: relative;
+}
+#wrap #main #section2 .slide-container .slide-view .slide-wrap .slide {
+  width: 249px;
+  height: 320px;
+  margin-right: 18px;
+}
+#wrap #main #section2 .slide-container .slide-view .slide-wrap .slide img {
+  width: 249px;
+  height: 100%;
+  pointer-events: none;
+}
+#wrap #main #section2 .slide-container .next-btn {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -30px;
+  margin-top: -50px;
+  border: 0;
+  background: none;
+}
+#wrap #main #section2 .slide-container .next-btn img {
+  width: 60px;
+  height: 60px;
+  transform: rotate(180deg);
+}
+#wrap #main #section2 .slide-container .prev-btn {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -30px;
+  margin-top: -50px;
+  border: 0;
+  background: none;
+}
+#wrap #main #section2 .slide-container .prev-btn img {
+  width: 60px;
+  height: 60px;
+}

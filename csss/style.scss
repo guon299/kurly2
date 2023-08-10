@@ -1,0 +1,234 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+
+#wrap{
+    width: 100%;
+    #header{
+        width: 100%;
+        height: 198px;
+        #title{
+            margin-top: 2px;
+            width: 100%;
+            .message-box{
+                width: 100%;
+                height: 20px;
+                text-align: center;
+                padding: 11px 0;
+                font-size: 16px;
+            }
+            .title-container{
+                width: 100%;
+                height:110px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin: 22px 0 22px 0;
+                span{
+
+                }
+                i{
+                    line-height: 42px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #main{
+        width: 100%;
+        #section1{
+            width: 100%;
+            .slide-container{
+                position: relative;
+                width: 100%;
+                user-select: none;
+                .slide-view{
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    .slide-wrap{
+                        width: 100%;
+                        position: relative;
+                        .slide{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            overflow: hidden;
+                            cursor: grab;
+                            opacity: 1;
+                            z-index: 1;
+                            &.slide1{
+                                z-index: 3;
+                                position: relative;
+                            }
+                            &.slide2{
+                                z-index: 2;
+
+                            }
+                            &.slide3{
+                                z-index: 1;
+                            }
+                        
+                            img{
+                                width: 100%;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+                .page-btn-box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    z-index: 2;
+                    a{
+                        margin: 0 10px;
+                        width: 12px;
+                        height: 12px;
+                        background: #787878;
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        text-indent: -2000px;
+                        overflow: hidden;
+                        transition: all 0.3s;
+                        &.on{
+                            background: #111;
+                            border: 2px solid #fff;
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+                .next-btn{
+                    position: absolute;
+                    top:50%;
+                    right: 16%;
+                    z-index: 2;
+                    margin-top: -26px;
+                    border: 0;
+                    background: none;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: opacity 1s;
+                    img{
+                        width: 52px;
+                        height: 52px;
+                    }
+                }
+                .prev-btn{
+                    position: absolute;
+                    z-index: 2;
+                    top: 50%;
+                    left: 16%;
+                    margin-top: -26px;
+                    border: 0;
+                    background: none;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: opacity 1s;
+                    img{
+                        transform: rotate(180deg);
+                        width: 52px;
+                        height: 52px;
+
+                    }
+                }
+                &:hover{
+                    .next-btn{
+                        opacity: 1;
+                    }
+                    .prev-btn{
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+        #section2{
+            width: 100%;
+            .slide-container{
+                user-select: none;
+                position: relative;
+                z-index: 1;
+                width: 1050px;
+                height: 530.562px;
+                margin: 0 746.500px;
+                padding: 40px 0;
+                .slide-view{
+                    position: relative;
+                    width: 100%;
+                    height: 530.562px;
+                    overflow: hidden;
+                    .title{
+                        width: 100%;
+                        height: 48.188px;
+                        margin-bottom: 27px;
+                        display: flex;
+                        justify-content: center;
+                        p{
+                            width: 100%;
+                            text-align: center;
+                            span{
+                                width: 100%;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                    .slide-wrap{
+                        width: calc(249px*20);
+                        height: 455.375px;
+                        display: flex;
+                        position: relative;
+                        
+                        .slide{
+                            width: 249px;
+                            height: 320px;
+                            margin-right: 18px;
+                            img{
+                                width: 249px;
+                                height: 100%;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+
+                }
+                .next-btn{
+                    position: absolute;
+                    z-index: 2;
+                    top:50%;
+                    right: -30px;
+                    margin-top: -50px;
+                    border: 0;
+                    background: none;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        transform: rotate(180deg);
+                    }
+                }
+                .prev-btn{
+                    position: absolute;
+                    z-index: 2;
+                    top:50%;
+                    left: -30px;
+                    margin-top: -50px;
+                    border: 0;
+                    background: none;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+    #footer{
+        
+    }
+}

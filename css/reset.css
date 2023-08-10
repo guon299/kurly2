@@ -1,0 +1,8 @@
+* {margin: 0; padding: 0;vertical-align: middle;}
+html,body {width: 100%; height: 100%;}
+ul {list-style: none;}
+body {
+    font : normal 14px/1 'Nanum Myeongjo', 'Montserrat';
+    color:rgb(70,70,70,);
+    background: rgb(255,255,255);
+}
